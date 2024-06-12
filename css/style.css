@@ -1,57 +1,65 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-::-webkit-scrollbar {
-    width: 0;
-}
-
 body {
-    background: linear-gradient(45deg, #190126, #100019);
+    background-color: aliceblue;
 }
 
-.banner img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    filter: blur(10px) brightness(40%) sepia();
-    position: absolute;
-    height: 100%;
-    display: block;
+header {
+    height: 50px;
+    background-color: #0072ff;
+    border-radius: 15px;
 }
 
-.photo-text {
-    position: absolute;
-    z-index: 100;
-    text-align: center;
+header nav a {
+    text-decoration: none;
     color: white;
-    margin: 10% 20% 0 20%;
-    min-width: 60%;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+header nav a#logo {
+    font-size: 36px;
+    left: 0;
+    margin-left: 50px;
+}
+
+header nav a.header-link {
     font-size: 26px;
+    float: right;
+    margin-right: 50px;
 }
 
-.photo-text svg {
-    margin-top: 40%
+.main-banner {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin-top: 50px;
 }
 
-@media (max-width: 800px) {
-    .photo-text {
-            position: absolute;
-            z-index: 100;
-            text-align: center;
-            color: white;
-            margin: 30% 20% 0 20%;
-            min-width: 60%;
-            font-size: 18px;
-        }
-
-        .photo-text svg {
-            margin-top: 150%
-        }
+.banner-image img {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    border-radius: 15px;
 }
 
-.gallery-block {
-    display: block;
+.banner-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 56px;
+    color: #fff;
+    font-weight: bold;
+    filter: drop-shadow(10px 5px 5px black);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.1em;
+}
+
+.banner-description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 36px;
+    color: #fff;
+    filter: drop-shadow(10px 5px 5px black);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.1em;
 }
